@@ -1,6 +1,7 @@
 # Documentation Update Log
 
 ## 2026-09-19
+* **Update**: Linked Epic #6 and its Stories to the [Workspace Invitation Lifecycle Hardening: Expiry, Resending, and Error Handling](/specs/workspace-invitation-lifecycle-hardening-expiry-resending/brd.md) BRD.
 * **Creation**: Added the [Workspace Invitation Lifecycle Hardening: Expiry, Resending, and Error Handling](/specs/workspace-invitation-lifecycle-hardening-expiry-resending/brd.md) BRD, approved by human:MohamedAliZouariEng.
 * **Creation**: Added the [onboarding glossary](/project/glossary.md).
 
