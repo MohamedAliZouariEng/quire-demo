@@ -1,6 +1,7 @@
 # Documentation Update Log
 
 ## 2026-09-19
+* **Creation**: Added the [Workspace Invitation Expiry and Resending](/specs/workspace-invitation-expiry-and-resending/brd.md) BRD, approved by human:MohamedAliZouariEng.
 * **Creation**: Added the [onboarding glossary](/project/glossary.md).
 
 ## 2026-09-15
