@@ -1,5 +1,8 @@
 # Documentation Update Log
 
+## 2026-09-19
+* **Creation**: Added the [onboarding glossary](/project/glossary.md).
+
 ## 2026-09-15
 * **Creation**: Added the [workspace onboarding meeting notes](/meetings/2026-09-15-workspace-onboarding.md).
 
