@@ -38,6 +38,23 @@ ichnos:
   - R-03
   - R-04
   - R-05
+  epic:
+    number: 6
+    url: https://github.com/MohamedAliZouariEng/quire-demo/issues/6
+  stories:
+  - key: S-1
+    number: 7
+    url: https://github.com/MohamedAliZouariEng/quire-demo/issues/7
+  - key: S-2
+    number: 8
+    url: https://github.com/MohamedAliZouariEng/quire-demo/issues/8
+  - key: S-3
+    number: 9
+    url: https://github.com/MohamedAliZouariEng/quire-demo/issues/9
+  - key: S-4
+    number: 10
+    url: https://github.com/MohamedAliZouariEng/quire-demo/issues/10
+resource: https://github.com/MohamedAliZouariEng/quire-demo/issues/6
 ---
 
 # Summary
