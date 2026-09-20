@@ -30,3 +30,16 @@ def test_tokens_are_stored_only_as_hashes() -> None:
     invitation, token = store.create("ws-1", "ada@example.com", NOW)
     assert token not in invitation.token_hash
     assert list(store.invitations) == [invitation.token_hash]
+
+
+def test_an_invitation_expires_after_7_days() -> None:
+    store = InvitationStore()
+    _, token = store.create("ws-1", "ada@example.com", NOW)
+    with pytest.raises(InvitationError, match="expired"):
+        store.accept(token, NOW + dt.timedelta(days=7))
+
+
+def test_an_invitation_is_accepted_within_7_days() -> None:
+    store = InvitationStore()
+    _, token = store.create("ws-1", "ada@example.com", NOW)
+    assert store.accept(token, NOW + dt.timedelta(days=6, hours=23)).accepted_at is not None

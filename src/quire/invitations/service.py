@@ -5,6 +5,9 @@ from dataclasses import dataclass, field
 
 from quire.invitations.tokens import hash_token, new_token
 
+# Invitation links expire 7 days after they are sent (BRD R-01, Story #7).
+DEFAULT_EXPIRY = dt.timedelta(days=7)
+
 
 class InvitationError(Exception):
     """The invitation cannot be used; the message is shown to the invitee."""
@@ -39,6 +42,8 @@ class InvitationStore:
             raise InvitationError("This invitation link is not valid.")
         if invitation.accepted_at is not None:
             raise InvitationError("This invitation has already been used.")
+        if now - invitation.created_at >= DEFAULT_EXPIRY:
+            raise InvitationError("This invitation has expired.")
         invitation.accepted_at = now
         return invitation
 
